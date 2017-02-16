@@ -20,7 +20,7 @@ h5, .h5 { @include responsive-type($font-size-h5); }
 h6, .h6 { @include responsive-type($font-size-h6); }
 
 .lead {
-    font-size: 1.8rem;
+    @include responsive-type($font-size-lead);
 }
 
 small {
