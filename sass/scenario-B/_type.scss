@@ -1,0 +1,57 @@
+@mixin responsive-type($size) {
+    font-size: $size;
+
+    @include media-breakpoint-up(md) {
+        font-size: $size * 1.2;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: $size * 1.4;
+    }
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+h1 {
+    @include responsive-type(2.4rem);
+}
+
+h2 {
+    @include responsive-type(2.2rem);
+}
+
+h3 {
+    @include responsive-type(2rem);
+}
+
+h4 {
+    @include responsive-type(1.8rem);
+}
+
+h5 {
+    @include responsive-type(1.6rem);
+}
+
+h6 {
+    @include responsive-type(1.5rem);
+}
+
+.lead {
+    font-size: 1.8rem;
+}
+
+small {
+    font-size: 1.2rem;
+}
+
+
+// Box
+ul {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+    border: 1px solid #ddd;
+}
