@@ -1,0 +1,35 @@
+body {
+    font-size: 1.4rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 0 0 10px;
+}
+
+/* RESPONSIVE HEADINGS
+========================================================== */
+
+h1, .h1 { @include responsive-type($font-size-h1); }
+h2, .h2 { @include responsive-type($font-size-h2); }
+h3, .h3 { @include responsive-type($font-size-h3); }
+h4, .h4 { @include responsive-type($font-size-h4); }
+h5, .h5 { @include responsive-type($font-size-h5); }
+h6, .h6 { @include responsive-type($font-size-h6); }
+
+.lead {
+    font-size: 1.8rem;
+}
+
+small {
+    font-size: 1.2rem;
+}
+
+// Box
+ul {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+    border: 1px solid #ddd;
+}

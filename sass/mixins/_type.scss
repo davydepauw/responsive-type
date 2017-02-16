@@ -1,0 +1,19 @@
+@function rem-rounding($number) {
+    @return round($number * 10) / 10;
+}
+
+@mixin responsive-type($size) {
+    font-size: $size;
+    line-height: $line-height-base;
+
+    @include media-breakpoint-up(md) {
+        font-size: rem-rounding($size * $font-multiplier-md);
+        line-height: rem-rounding(($size * $font-multiplier-md) * $line-height-base);
+
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: rem-rounding($size * $font-multiplier-lg);
+        line-height: rem-rounding(($size * $font-multiplier-lg) * $line-height-base);
+    }
+}
