@@ -451,25 +451,27 @@ template {
   display: none; }
 
 body {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 600;
   margin: 0 0 10px; }
 
 /* RESPONSIVE HEADINGS
 ========================================================== */
 h1, .h1 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   line-height: 1.5; }
   @media (min-width: 768px) {
     h1, .h1 {
-      font-size: 2.9rem;
-      line-height: 4.3rem; } }
+      font-size: 3.1rem;
+      line-height: 4.7rem; } }
   @media (min-width: 992px) {
     h1, .h1 {
-      font-size: 3.4rem;
-      line-height: 5rem; } }
+      font-size: 3.6rem;
+      line-height: 5.5rem; } }
 
 h2, .h2 {
   font-size: 2.2rem;
