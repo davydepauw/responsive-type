@@ -545,6 +545,9 @@ h6, .h6 {
       font-size: 2.2rem;
       line-height: 3.1rem; } }
 
+.non-responsive {
+  font-size: 2rem; }
+
 small {
   font-size: 1.2rem; }
 
